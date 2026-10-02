@@ -332,7 +332,7 @@ if __name__ == '__main__':
     lr = 3e-4
     epochs = 100
 
-    model_types = ["tcn", "gcntf", "sptmod", "mamba", "lstm", "diff-opto", "greybox"]
+    model_types = ["tcn", "gcntf", "sptmod", "mamba", "lstm", "diffopto", "greybox"]
 
     for model_type in model_types:
         cfg = PAPER_CONFIGS_CL1B[model_type]

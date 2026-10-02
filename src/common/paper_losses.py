@@ -311,7 +311,7 @@ def _preset(name: str, seq_len=None, prefilt=None) -> nn.Module:
         return WeightedLoss({"ESR": (ESRLoss(), 1.0)},
                             prefilt if prefilt is not None else DCPreEmphasis())
     # diff-opto DRC
-    if name in ("diff-opto", "mdl"):
+    if name in ("diffopto", "mdl"):
         if seq_len is None:
             raise ValueError("preset 'mdl' needs seq_len (frame lengths are "
                              "derived from it); pass build_loss(..., seq_len=...)")
@@ -364,7 +364,7 @@ def build_loss(model_type: str = None, preset: str = None, seq_len=None, prefilt
         "sptmod": "sptmod",
         "mamba": "mse",
         "greybox": "greybox",
-        "diff-opto": "mdl",
+        "diffopto": "mdl",
 
     }
     if model_type is None:

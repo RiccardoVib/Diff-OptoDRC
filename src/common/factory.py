@@ -29,7 +29,7 @@ def build_model(model_type: str, cond_dim: int, buffer: int = 0, seq_len: int = 
     if model_type in ("mamba"):
         return MambaWrapper(cond_dim=cond_dim, buffer=buffer, seq_len=seq_len, **kwargs)
 
-    if model_type in ("diff-opto"):
+    if model_type in ("diffopto"):
         return DiffOptoWrapper(cond_dim=cond_dim, buffer=buffer, seq_len=seq_len, **kwargs)
 
     raise ValueError(f"unknown model_type: {model_type!r}")
