@@ -1,11 +1,11 @@
 # SPDX-FileCopyrightText: Copyright © 2026 Riccardo Simionato
 
 import torch
-from common import BaselineModel
+from src.common.common import BaselineModel
 from DiffOpto import DiffOpto
 
 
-class NeuralDRCWrapper_new(BaselineModel):
+class DiffOptoWrapper(BaselineModel):
     stateful = False
     supports_conditioning = True
     cat_input = True

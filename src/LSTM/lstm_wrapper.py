@@ -4,7 +4,7 @@ LSTM micro-tcn(Steinmetz & Reiss, AES 2022)
 """
 
 import torch
-from src.common import BaselineModel
+from src.common.common import BaselineModel
 from lstm import LSTMModel
 
 

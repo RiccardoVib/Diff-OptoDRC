@@ -1,6 +1,5 @@
 """
-Wraps for gcn-tfilm's GCNTF
-GCNTF-TFiLM: https://github.com/mcomunita/gcn-tfilm/
+Wrapper for GCNTF-TFiLM: https://github.com/mcomunita/gcn-tfilm/
 gcn-tfilm -- Comunità et al., ICASSP 2023 (config "GCNTF3")
 """
 
