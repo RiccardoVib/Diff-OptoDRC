@@ -1,4 +1,5 @@
-"""Wrapper for grey-box: https://github.com/Alec-Wright/GreyBoxDRC
+"""
+Wrapper for grey-box: https://github.com/Alec-Wright/GreyBoxDRC
 grey-box DRC (Wright & Valimaki, DAFx 2022)
 """
 

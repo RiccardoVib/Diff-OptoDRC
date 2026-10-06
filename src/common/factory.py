@@ -2,10 +2,10 @@
 
 from src.LSTM.lstm_wrapper import LSTMWrapper
 from src.TCN.tcn_wrapper import TCNWrapper
-from src.GCN.gcntfilm_wrapper import GCNTFWrapper
+from src.GCNTF.gcntfilm_wrapper import GCNTFWrapper
 from src.SPT.sptmod_wrapper import SPTModWrapper
 from src.Mamba.mamba_wrapper import MambaWrapper
-from src.GrayBox.GreyCompWrapper import GreyCompWrapper
+from src.GreyBox.GreyCompWrapper import GreyCompWrapper
 from src.DiffOpto.DiffOptoWrapper import DiffOptoWrapper
 
 def build_model(model_type: str, cond_dim: int, buffer: int = 0, seq_len: int = 2048, **kwargs):
