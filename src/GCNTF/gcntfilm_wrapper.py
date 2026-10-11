@@ -15,7 +15,7 @@ class GCNTFWrapper(BaselineModel):
     def __init__(self, cond_dim: int = 0, buffer: int = 0, seq_len=2048, **gcn_kwargs):
         super().__init__()
 
-        self.model = GCNTFCond(**gcn_kwargs)
+        self.model = GCNTFCond(cond_dim, **gcn_kwargs)
         self.criterion = None
         self.buffer = buffer
         self.target_length = seq_len
