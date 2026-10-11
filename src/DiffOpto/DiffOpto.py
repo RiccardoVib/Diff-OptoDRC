@@ -136,8 +136,8 @@ class DiffOpto(nn.Module):
             raise ValueError(f"c has {c.shape[-1]} controls, expected at least "
                              f"{self.cond_dim} (ballistics {self.ballistics_dim} "
                              f"+ curve {self.curve_dim})")
-        ball = c[..., :self.ballistics_dim] if self.ballistics_dim else None
-        curve = (c[..., self.ballistics_dim:self.ballistics_dim + self.curve_dim]
+        ball = c[..., self.curve_dim:self.curve_dim + self.ballistics_dim] if self.ballistics_dim else None
+        curve = (c[..., :self.curve_dim]
                  if self.curve_dim else None)
         return ball, curve
 
